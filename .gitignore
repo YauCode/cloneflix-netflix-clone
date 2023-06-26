@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/node_modules
+node_modules/
 /.pnp
 .pnp.js
 
@@ -17,6 +19,7 @@
 
 # misc
 .DS_Store
+.DS_Store?
 *.pem
 
 # debug
@@ -26,6 +29,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
 
 # vercel
 .vercel
