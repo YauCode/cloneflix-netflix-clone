@@ -17,7 +17,7 @@ const MovieCard: React.FC<MovieCardProps> = ({
 
     return (
         <div className="group bg-zinc-900 col-span relative h-[12vw]">
-            <img src={data.thumbnailUrl} alt="Thumbnail" className="
+            <img onClick={() => openModal(data?.id)} src={data.thumbnailUrl} alt="Thumbnail" className="
                 cursor-pointer
                 object-cover
                 transition
@@ -83,13 +83,13 @@ const MovieCard: React.FC<MovieCardProps> = ({
                     <div className="flex flex-row mt-4 gap-2 font-semibold items-center">
                         <p className="text-white text-lg">{data.title}</p>
                     </div>
-                    <p className="text-green-400 font-semibold mt-4">
+                    <p className="text-green-400 font-semibold mt-1">
                         New <span className="text-white">2023</span>
                     </p>
-                    <div className="flex flex-row mt-4 gap-2 items-center">
+                    <div className="flex flex-row mt-1 gap-2 items-center">
                         <p className="text-white text-[10px] lg:text-sm">{data.duration}</p>
                     </div>
-                    <div className="flex flex-row items-center gap-2 mt-4 text-[8px] text-white lg:text-sm">
+                    <div className="flex flex-row items-center gap-2 mt-1 text-[8px] text-white lg:text-sm">
                         <p>{data.genre}</p>
                     </div>
                 </div>
