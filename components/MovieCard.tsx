@@ -48,7 +48,7 @@ const MovieCard: React.FC<MovieCardProps> = ({
                 group-hover:opacity-100
             "
             >
-                <img onClick={() => router.push(`/watch/${data?.id}`)} src={data.thumbnailUrl} alt="Movie" draggable={false} className="
+                <img src={data.thumbnailUrl} alt="Movie" draggable={false} className="
                 cursor-pointer
                 object-cover
                 transition
